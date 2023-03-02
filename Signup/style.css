@@ -4,6 +4,61 @@
     box-sizing: border-box;
 }
 body {
+    font-family: sans-serif;
+}
+.left {
+width: 50%;
+height: 100vh;
+background-color: #0EBBAB;
+color: white;
+float: left;
+}
+.text {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.text p {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    opacity: 0.6;
+    font-size: 15px;
+    text-align: center;
+}
+.text h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.text button {
+    background-color: #0EBBAB;
+    border: 1px solid white;
+    padding: 13px 70px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+}
+.text button:hover {
+    background-color: white;
+    color: #0EBBAB;
+    border: 1px solid #0EBBAB;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* right */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     background-color: white;
     font-family: sans-serif;
 }
@@ -13,6 +68,7 @@ body {
     height: 100vh;
     background-color: white;
     color: #0EBBAB;
+    float: right;
 }
 .text2 {
     height: 100vh;
@@ -22,27 +78,74 @@ body {
     flex-direction: column;
 }
 .text2 p {
-    width: 70%;
     margin-bottom: 30px;
     margin-top: 30px;
-    opacity: 0.6;
+    color: black;
+    opacity: 0.5;
     font-size: 15px;
     text-align: center;
 }
+
 .text2 h1 {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
+
 .text2 button {
-    background-color: wheat;
-    border: 1px solid #0EBBAB;
+    background-color: #0EBBAB;
+    border: none;
     padding: 13px 70px;
     border-radius: 25px;
     cursor: pointer;
-    color: #0EBBAB;
+    color: #fff;
 }
+
 .text button:hover {
     background-color: white;
     color: #0EBBAB;
+    transition: 0.5s;
     border: 1px solid #0EBBAB;
+}
+
+.text2 button:hover {
+    background-color: white;
+    color: #0EBBAB;
+    transition: 0.5s;
+    border: 1px solid #0EBBAB;
+}
+
+.box i{
+    border: 1px solid #31303060;
+    border-radius: 50%;
+    padding: 13px;
+    color: #313030;
+    margin-right: 15px;
+}
+
+.box:last-child {
+    margin-right: 0px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #696962;
+}
+
+.box1 i, .box2 i, .box3 i {
+    color: #696962;
+}
+
+.box1, .box2, .box3 {
+    background-color: #EAF8EA;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
 }
